@@ -1,0 +1,26 @@
+<div class="container">
+  <!-- Add new employee button at the top left -->
+  <div class="top-left-button">
+    <a href="/employee-data">
+      <button class="primary-btn">Add new employee</button>
+    </a>
+  </div>
+
+  <!-- Form for posting a new department -->
+  <div class="form-container">
+    <h2>Post New Department</h2>
+    <form [formGroup]="postCustomerForm" (ngSubmit)="postCustomer()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" formControlName="name" required />
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" formControlName="location" required />
+      </div>
+      <div>
+        <button type="submit">Post</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+/* General container and layout */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Button container (left-align buttons) */
+  .button-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Primary button (Add new employee & Post new customer) */
+  .primary-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Secondary button (Update) */
+  .secondary-btn {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #0b7dda;
+  }
+  
+  /* Danger button (Delete) */
+  .danger-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .danger-btn:hover {
+    background-color: #e53935;
+  }
+  
+  /* Table styling */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .data-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

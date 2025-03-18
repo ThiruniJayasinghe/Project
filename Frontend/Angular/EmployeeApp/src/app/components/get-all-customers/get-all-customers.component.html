@@ -1,0 +1,48 @@
+<div class="container">
+
+
+    <div class="button-container">
+      <a href="/employee-data">
+        <button class="primary-btn">Add new employee</button>
+      </a>
+    </div>
+    <h2>Departments</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+            <th>Dep ID</th>
+          <th>Location</th>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+            <td>{{ customer.id }}</td>
+          <td>{{ customer.location }}</td>
+          <td>{{ customer.name }}</td>
+          <td>
+            <a href="/customer/{{customer.id}}">
+              <button class="secondary-btn">Update</button>
+            </a>
+          </td>
+          <td>
+            <button class="danger-btn" (click)="deleteCustomer(customer.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  <br>
+    <div class="button-container">
+        <a href="/customers">
+          <button class="primary-btn">Post New Department</button>
+        </a>
+      </div>
+
+      <div class="navbar">
+        <a href="">
+          <button class="primary-btn">Logout</button>
+        </a>
+      </div>
+    </div>
+  

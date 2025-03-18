@@ -1,0 +1,107 @@
+/* Body Styles: Centering the content */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    
+    height: 100vh; /* Full height of the viewport */
+   /* background-image: url('path_to_background_image.jpg'); /* Optional, background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Login Form Container */
+  .login-container {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Maximum width of the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: auto; /* Ensure the form is centered */
+    
+  }
+  
+  /* Heading Styles */
+  .login-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Label Styles */
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Input Fields Styles */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus Style for Input Fields */
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Error Message Style */
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 20px;
+  }
+  
+  /* Submit Button Styles */
+  button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover Effect for Submit Button */
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 600px) {
+    .login-container {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

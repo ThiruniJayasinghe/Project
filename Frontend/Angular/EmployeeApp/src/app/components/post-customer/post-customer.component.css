@@ -1,0 +1,69 @@
+/* General container and layout */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Allow absolute positioning of the button */
+  }
+  
+  /* Position the "Add new employee" button at the top-left */
+  .top-left-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Form container styling */
+  .form-container {
+    margin-top: 100px; /* To make space for the button */
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Primary button (Add new employee & Post new department) */
+  .primary-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0b7dda;
+  }
+  

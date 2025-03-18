@@ -1,0 +1,2 @@
+C:\Users\Thiruni Jayasinghe\source\repos\Employeemanagement\employeemanagement.client\obj\Debug\employeemanagement.client.esproj.CoreCompileInputs.cache
+D:\Employee\.Net\Employeemanagement\employeemanagement.client\obj\Debug\employeemanagement.client.esproj.CoreCompileInputs.cache

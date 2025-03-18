@@ -1,0 +1,74 @@
+<div class="container">
+  <h2 class="mb-4">Employee Management</h2>
+
+  <!-- Add Employee Button -->
+  <button class="btn btn-primary mb-3" (click)="openModel()">Add Employee</button>
+
+  <!-- Employee Table -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Salary</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employeeList">
+        <td>{{ employee.employeeId }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.phone }}</td>
+        <td>{{ employee.salary }}</td>
+        <td>
+          <button class="btn btn-warning" (click)="openModel(employee)">Edit</button>
+          <button class="btn btn-danger" (click)="deleteEmployee(employee.employeeId)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Employee Modal -->
+  <div #employeeModal class="modal fade" tabindex="-1" aria-labelledby="employeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="employeeModalLabel">{{ modalTitle }}</h5>
+          <button type="button" class="btn-close" (click)="closeModel()" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="saveEmployee()">
+            <div class="mb-3">
+              <label for="employeeId" class="form-label">Employee ID</label>
+              <input type="number" class="form-control" [(ngModel)]="employeeForm.employeeId" name="employeeId" disabled>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" [(ngModel)]="employeeForm.name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" [(ngModel)]="employeeForm.email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" class="form-control" [(ngModel)]="employeeForm.phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="salary" class="form-label">Salary</label>
+              <input type="number" class="form-control" [(ngModel)]="employeeForm.salary" name="salary" required>
+            </div>
+            <div class="mb-3">
+              <label for="departmentId" class="form-label">Department ID</label>
+              <input type="number" class="form-control" [(ngModel)]="employeeForm.departmentId" name="departmentId" required>
+            </div>
+            <button type="submit" class="btn btn-primary">{{ modalButtonText }}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
